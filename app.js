@@ -10,7 +10,7 @@ app.post("/cadastrar", function(req, res){
         email: req.email
     })
     .then(function(){
-        res.redirect('/')
+        res.redirect('./src/views/listar_pessoas')
     })
     .catch(function(erro){
         console.log("Não foi possível realizar o cadastro")
@@ -18,12 +18,13 @@ app.post("/cadastrar", function(req, res){
 })
 
 app.get("/listar", function(req, res){
-    
+    const listDetalhes = res.body
+    return listDetalhes
 })
 
 app.get("/delete/:id", function(req,res){
     try {
-        return req.
+        return req.findOneAndDelte(req.id)
     } catch (error) {
         console.log("Não foi possível excluir da base de dados. Detalhes:" + error)
     }
