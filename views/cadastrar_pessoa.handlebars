@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Pessoa
+    </title>
+</head>
+<body>
+
+    <form action="POST">
+
+        <label for="nome">Insira seu nome</label>
+        <input type="text" placeholder="Nome..." name="nome" required>
+        
+        <label for="idade">Informe sua idade</label>
+        <input type="number" placeholder="Idade" required name="idade">
+        
+        <label for="telefone">Informe seu telefone</label>
+        <input type="text" placeholder="(99) 9999-9999" name="telefone" maxlength="10">
+
+        <label for="celular">Informe seu celular</label>
+        <input type="text" placeholder="(99) 9 9999-9999" name="celular" required maxlength="11">
+
+        <label for="email">Insira seu e-mail</label>
+        <input type="email" placeholder="exemplo@email.com" name="email" required maxlength="11">
+        
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>

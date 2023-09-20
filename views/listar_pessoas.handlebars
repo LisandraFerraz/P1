@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Pessoas</title>
+</head>
+<body>
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Celular</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr {{#each listaPessoas}}>
+      <th scope="row">{{id}}</th>
+      <td>{{nome}}</td>
+      <td>{{idade}}</td>
+      <td>{{telefone}}</td>
+      <td>{{celular}}</td>
+      <td>{{e-mail}}</td>
+      <td>
+        <button class="btn btn-danger">Deletar</button>
+        <button class="btn btn-primary">Atualizar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    
+</body>
+</html>
